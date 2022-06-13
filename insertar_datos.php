@@ -58,8 +58,8 @@
  * ****************************************
  * *************************************** SESION INICIADA
 ***************************************************************/
-//password_verify($clave_post, $clave) == 1 
-if($usuarioo == $usuario || !empty($_SESSION['usuario']) && !empty($_SESSION['clave'])){
+
+if($usuarioo == $usuario && password_verify($clave_post, $clave) == 1   || !empty($_SESSION['usuario']) && !empty($_SESSION['clave'])){
 	/**************************************
 	 * CERRAR SESION DESPUES DE UN TIEMPO *
 	 *************************************/
@@ -378,7 +378,7 @@ if($usuarioo == $usuario || !empty($_SESSION['usuario']) && !empty($_SESSION['cl
 ?>
 <br><br>
 <div class="container">
-	<div class="row justify-content-center" >
+	<div class="row justify-content-center">
 			<form action="insertar_datos.php" method="post" align="center" class="border col-md-5 p-5">
 				<h4>Ingrese usuario Administrador</h4>
 				<hr>
