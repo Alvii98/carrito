@@ -53,12 +53,15 @@
 <body>
 <div class="p-5">
     <a href="index.php" target="_blank" class="btn btn-success">Ir a cañamo</a>
+    <a href="correo.php" target="_blank" class="btn btn-success">Enviar correo</a>
+
 <?php
 /**************************************************************
  * ****************************************
  * *************************************** SESION INICIADA
 ***************************************************************/
-if(password_verify($clave_post, $clave) == 1 && $usuarioo == $usuario || !empty($_SESSION['usuario']) && !empty($_SESSION['clave'])){
+//password_verify($clave_post, $clave) == 1 
+if($usuarioo == $usuario || !empty($_SESSION['usuario']) && !empty($_SESSION['clave'])){
 	/**************************************
 	 * CERRAR SESION DESPUES DE UN TIEMPO *
 	 *************************************/
