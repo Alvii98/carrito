@@ -6,7 +6,7 @@
 
 try {
 	
-	$con=new PDO('mysql:host=sql308.epizy.com;dbname=epiz_30533450_canamo','epiz_30533450','b77PtRZ3AQmpX');
+	$con=new PDO('mysql:host=localhost;dbname=carrito','root','');
 
 } catch (PDOException $e) {
 	echo "Error".$e->getMessage();
