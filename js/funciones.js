@@ -199,15 +199,21 @@ $(document).ready(function(){
         p_pre = document.createElement('p'),
         bot_el = document.createElement('i');
         
+        ///// NUEVO
+        titulo_cantidad.setAttribute("class", "col-md-4 ajustes_carro p-2")
+        titulo_nombre.setAttribute("class", "col-md-4 ajustes_carro p-2")
+        titulo_precio.setAttribute("class", "col-md-4 ajustes_carro p-2")
+        ////
+        /*
         titulo_cantidad.classList.add('col-md-4')
         titulo_cantidad.classList.add('ajustes_carro')
         titulo_cantidad.classList.add('p-2')
         titulo_nombre.classList.add('col-md-4')
-        titulo_nombre.classList.add('ajustes_carro')
+        titulo_nombre.classList.add('ajustes_carro')        BORRAR SI ANDA LO NUEVO
         titulo_nombre.classList.add('p-2')
         titulo_precio.classList.add('col-md-4')
         titulo_precio.classList.add('ajustes_carro')
-        titulo_precio.classList.add('p-2')
+        titulo_precio.classList.add('p-2')*/
 
         var precio = $('#precioModal').text().split('$'),
         precioNum = Number(precio[1]),
@@ -225,20 +231,26 @@ $(document).ready(function(){
             $('#destruir').val('');
         }
         var cont = contador++;
-        agmas.classList.add('bi')
+
+        ////NUEVO
+        agmas.setAttribute("class", "bi bi-cart-plus-fill pointer2 sumar-car")
+        bot_el.setAttribute("class", "bi bi-trash-fill pointer2 elim-car")
+        agmen.setAttribute("class", "bi bi-cart-dash-fill pointer2 restar-car")
+        //////
+        /*agmas.classList.add('bi')
         agmas.classList.add('bi-cart-plus-fill')
-        agmas.classList.add('pointer2')
-        agmas.classList.add('sumar-car')
+        agmas.classList.add('pointer2')       BORRAR SI ANDA LO NUEVO
+        agmas.classList.add('sumar-car')*/
         agmas.setAttribute("onclick", "clickMas("+cont+");")
-        bot_el.classList.add('bi')
+       /* bot_el.classList.add('bi')
         bot_el.classList.add('bi-trash-fill')
-        bot_el.classList.add('pointer2')
-        bot_el.classList.add('elim-car')
+        bot_el.classList.add('pointer2')            BORRAR SI ANDA LO NUEVO
+        bot_el.classList.add('elim-car')*/
         bot_el.setAttribute("onclick", "bot_elim("+cont+");")
-        agmen.classList.add('bi')
+        /*agmen.classList.add('bi')
         agmen.classList.add('bi-cart-dash-fill')
-        agmen.classList.add('pointer2')
-        agmen.classList.add('restar-car')
+        agmen.classList.add('pointer2')            BORRAR SI ANDA LO NUEVO
+        agmen.classList.add('restar-car')*/
         agmen.setAttribute("onclick", "clickMen("+cont+");")
         p_can.classList.add('pad-cant-pre')
         p_pre.classList.add('pad-cant-pre')
@@ -251,14 +263,18 @@ $(document).ready(function(){
 
         p_can.setAttribute("id", "divId"+cont)
         cabecera.setAttribute("id", "cabecera_"+cont)
-
-        div_id.classList.add('col-md-4')
+        //NUEVO
+        div_id.setAttribute("class", "col-md-4 griss border border-dark f-l")
+        div_producto.setAttribute("class", "col-md-4 griss border border-dark f-l")
+        div_precio.setAttribute("class", "col-md-4 griss border border-dark f-l")
+        //
+        /*div_id.classList.add('col-md-4')
         div_id.classList.add('griss')
         div_id.classList.add('border')
         div_id.classList.add('border-dark')
         div_id.classList.add('f-l')
         div_producto.classList.add('col-md-4')
-        div_producto.classList.add('griss')
+        div_producto.classList.add('griss')            BORRAR SI ANDA LO NUEVO
         div_producto.classList.add('border')
         div_producto.classList.add('border-dark')
         div_producto.classList.add('f-l')
@@ -266,7 +282,7 @@ $(document).ready(function(){
         div_precio.classList.add('griss')
         div_precio.classList.add('border')
         div_precio.classList.add('border-dark')
-        div_precio.classList.add('f-l')
+        div_precio.classList.add('f-l')*/
         //Cuando el nombre del producto es mayor a 32 letras entra y ajusta el diseño
         if($('#nombreModal').text().length > 32){
             agmas.classList.add('sum-res-pad')
