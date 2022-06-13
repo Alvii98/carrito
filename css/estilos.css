@@ -97,14 +97,6 @@ body{
 	border-left-color: #09f;
 	animation: spin 1s ease infinite;
 }
-#ofertas{
-    display:none;
-    margin-top:0.5%;
-    border-radius:3px;
-    padding-left: 1%;
-    padding-right: 1%; 
-}
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -114,6 +106,14 @@ body{
         transform: rotate(360deg);
     }
 }
+#ofertas{
+    display:none;
+    margin-top:0.5%;
+    border-radius:3px;
+    padding-left: 1%;
+    padding-right: 1%; 
+}
+
 /****************************************************************/
 
 /************ AJUSTAR RESOLUCION PARA MOVILES **********************/
