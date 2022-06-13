@@ -1,0 +1,154 @@
+body{
+    background-image: url('../img/fonda.jpg');
+}
+.pointer{
+    display: list-item;
+    cursor: pointer;
+}
+/*.verde{
+    background-color: #4e744a;
+}*/
+.griss{
+    background-color: #C8C8C8;
+}
+.gris{
+    background-color: #6c757d;
+}
+.color-canamo{
+    background-color:#384237;
+}
+.globo{
+    padding: 10px;
+    color: white;
+}
+.globo:hover{
+    font-size: 25px;
+    padding: 6.50px;
+    text-align: center;
+}
+.bor-img:hover{
+	animation: spin 3s ease;
+    padding: -5px;
+}
+/************** MODIFICACIONES PARA EL CARRO *******************/
+.pad-mod{
+    padding-top:18px;
+}
+.heig-mod{
+    height:70px;
+}
+.pointer2{
+    cursor: pointer;
+}
+.hei-prod{
+    height:60px;
+}
+.pad-cant-pre{
+    padding-top:5px;
+}
+.elim-pad{
+    padding-top:3%;
+}
+.sum-res-pad{
+    padding-top:15px;
+}
+.sumar-car{
+    position:absolute; 
+    top:10px;
+    right:90px;
+}
+.restar-car{
+    position:absolute; 
+    top:10px;
+    right:60px;
+}
+.elim-car{
+    position:absolute;
+    top:10px;
+    right:70px;
+}
+/*************************************************************/
+
+#boton_buscar:hover{
+    font-size: 18px;
+}
+.modal-body{
+    border-radius: 5%;
+}
+.hei-tod{
+    height:460px;
+}
+
+/************ FORMATO DE LETRA ********************/
+.f-l{
+    font-family:Bahnschrift SemiBold;
+    font-size: 20px;
+}
+/************ BORDE DE IMAGEN *********************/
+.bor-img{
+    box-shadow: 10px 5px 5px black;
+}
+ /********* PARA CREAR EL LOADER *****************/
+.spinner{
+	border: 20px solid rgba(0, 0, 0, 0.1);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border-left-color: #09f;
+	animation: spin 1s ease infinite;
+}
+#ofertas{
+    display:none;
+    margin-top:0.5%;
+    border-radius:3px;
+    padding-left: 1%;
+    padding-right: 1%; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/****************************************************************/
+
+/************ AJUSTAR RESOLUCION PARA MOVILES **********************/
+@media screen and (max-width: 800px){
+    .ocultar{
+        display: none;
+    }
+    .ajustes_carro{
+        background-color: #6c757d;
+        border: solid #343a40 0.50px;
+        color: white;
+        font-family:Bahnschrift SemiBold;
+        font-size: 20px;
+    }
+    #logo_1{
+        width: 160px;
+        height: 100px;
+        margin-top: 30px;
+    }
+    #input_buscar{
+        margin-top: 5px;
+    }
+}
+@media screen and (min-width: 800px){
+    .ajustes_carro{
+        display: none;
+    }
+    #ofertas{
+        margin-left:5%;
+        margin-bottom:1%;
+    }
+    .ajustes_titulos{
+        background-color: #6c757d;
+        border: solid #343a40 0.50px;
+        color: white;
+    }
+}
+/**********************************************************************/
