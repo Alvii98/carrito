@@ -533,7 +533,7 @@ $(document).ready(function(){
         $('#acaBot2').css("background-color", "#6c757d");
         $('#acaBot3').css("background-color", "#6c757d");
     });
-    //////////////////// CHATT CAÑAMO  ////////////////////////////////
+    //////////////////// CHATT  ////////////////////////////////
     $('#chat1').click(function(){
         $('#chat2').show();
         $('#chat1').hide();
@@ -553,7 +553,7 @@ $(document).ready(function(){
             dataType : 'JSON',
             data: msj,
             success: function(data) {
-                alertify.alert('CAÑAMO GROW SHOP','Mensaje enviado con exito!');
+                alertify.alert('Corner Shop','Mensaje enviado con exito!');
             }
         });
         $('#textChat').val('');
@@ -570,12 +570,6 @@ $(document).ready(function(){
     $('#imgModal3').click(function(){
         $('#div_img3').hide();
         $('#div_img').show();
-    });
-    ////////////////// DESCARGAR ACCESO DIRECTO APPWEB ////////////////////////////
-    $('#accesoDirecto').click(function(){
-        alertify.confirm('Crear acceso directo', 'Esta seguro que desea crear un acceso directo en su pc ?', function(){ alertify.success('Descargando acceso directo')
-            window.open("index.php?url=canamogrowshop.42web.io/index.php&name=Canamo");
-        }, function(){ alertify.error('Acceso directo cancelado')});
     });
 });
 

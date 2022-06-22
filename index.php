@@ -18,10 +18,15 @@ if(isset($_SESSION['tiempo'])){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="wdth=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/logo.jpg" class="rounded-lg border-dark">
-    <title>Cañamo</title>
+    <link rel="icon" href="img/logoTienda.png" class="rounded-lg border-dark">
+    <title>cornerShop</title>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="libs/bootstrap4.6.1/css/bootstrap.css">
     <link rel="stylesheet" href="libs/bootstrap4.6.1/css/bootstrap.min.css">
@@ -49,7 +54,7 @@ if(isset($_SESSION['tiempo'])){
     <header class="sticky-top">
         <div class="container-fluid color-canamo">
             <a href="https://api.whatsapp.com/send?phone=5492345447270" target="_blank" class="float-right"><i class="text-light ml-3 bi bi-whatsapp"> 2345-447270</i></a>
-            <a href="https://www.instagram.com/canamo_growshop/" target="_blank" class="float-right"><i class="text-light ml-4 bi bi-instagram"> canamo_growshop</i></a>
+            <a href="#" target="_blank" class="float-right"><i class="text-light ml-4 bi bi-instagram"> cornerShop</i></a>
             <?php if(!empty($_SESSION['usuario']) && !empty($_SESSION['clave'])){ ?>
             <a href="insertar_datos.php" target="_blank" style="font-size:20px;" class="text-light text-center px-5 float-right"><img src="img/logito.jpg"><br><?php echo $_SESSION['usuario'];?></a>
             <input type="hidden" id="var_sesion" value="<?php echo $_SESSION['usuario']; ?>">
@@ -62,7 +67,7 @@ if(isset($_SESSION['tiempo'])){
                 </div>
             </div>
             <div class="row justify-content-center rounded-lg">
-                <img src="img/logo.jpg" onclick="window.open('https://www.instagram.com/canamo_growshop/', '_blank');" id="logo_1" class="pointer" height="150px" width="350px">
+                <img src="img/logoTienda.png" onclick="window.open('#', '_blank');" id="logo_1" class="pointer" height="150px" width="350px">
             </div>
             <div class="row justify-content-center float-right px-5 mb-3">
                 <form>
@@ -138,9 +143,9 @@ if(isset($_SESSION['tiempo'])){
     <br><br>
     <div class="container-fluid color-canamo">
         <div class="row justify-content-center rounded-lg">
-            <img src="img/logo.jpg" onclick="window.open('https://www.instagram.com/canamo_growshop/', '_blank');" class="pointer" height="20%" width="20%">
+            <img src="img/logoTienda.png" onclick="window.open('#', '_blank');" class="pointer" height="20%" width="20%">
         </div>
-        <a href="https://www.instagram.com/canamo_growshop/" target="_blank"><i class="text-light ml-4 bi bi-instagram"> canamo_growshop</i></a>
+        <a href="#" target="_blank"><i class="text-light ml-4 bi bi-instagram"> cornerShop</i></a>
         <a href="https://api.whatsapp.com/send?phone=5492345447270" target="_blank"><i class="text-light ml-3 bi bi-whatsapp"> 2345-447270</i></a>
     </div>
     <!-- ////////////////////// MODAL ///////////////////////////////-->

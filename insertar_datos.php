@@ -30,7 +30,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="wdth=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo.jpg"> 
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoTienda.png"> 
     <title>Insertar datos</title>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -50,7 +50,7 @@
 </head>
 <body>
 <div class="p-5">
-    <a href="index.php" target="_blank" class="btn btn-success">Ir a cañamo</a>
+    <a href="index.php" target="_blank" class="btn btn-success">Ir a cornerShop</a>
     <a href="correo.php" target="_blank" class="btn btn-success">Enviar correo</a>
 
 <?php
