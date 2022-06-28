@@ -236,21 +236,10 @@ $(document).ready(function(){
         agmas.setAttribute("class", "bi bi-cart-plus-fill pointer2 sumar-car")
         bot_el.setAttribute("class", "bi bi-trash-fill pointer2 elim-car")
         agmen.setAttribute("class", "bi bi-cart-dash-fill pointer2 restar-car")
-        //////
-        /*agmas.classList.add('bi')
-        agmas.classList.add('bi-cart-plus-fill')
-        agmas.classList.add('pointer2')       BORRAR SI ANDA LO NUEVO
-        agmas.classList.add('sumar-car')*/
         agmas.setAttribute("onclick", "clickMas("+cont+");")
-       /* bot_el.classList.add('bi')
-        bot_el.classList.add('bi-trash-fill')
-        bot_el.classList.add('pointer2')            BORRAR SI ANDA LO NUEVO
-        bot_el.classList.add('elim-car')*/
+
         bot_el.setAttribute("onclick", "bot_elim("+cont+");")
-        /*agmen.classList.add('bi')
-        agmen.classList.add('bi-cart-dash-fill')
-        agmen.classList.add('pointer2')            BORRAR SI ANDA LO NUEVO
-        agmen.classList.add('restar-car')*/
+
         agmen.setAttribute("onclick", "clickMen("+cont+");")
         p_can.classList.add('pad-cant-pre')
         p_pre.classList.add('pad-cant-pre')
@@ -263,26 +252,11 @@ $(document).ready(function(){
 
         p_can.setAttribute("id", "divId"+cont)
         cabecera.setAttribute("id", "cabecera_"+cont)
-        //NUEVO
+
         div_id.setAttribute("class", "col-md-4 griss border border-dark f-l")
         div_producto.setAttribute("class", "col-md-4 griss border border-dark f-l")
         div_precio.setAttribute("class", "col-md-4 griss border border-dark f-l")
-        //
-        /*div_id.classList.add('col-md-4')
-        div_id.classList.add('griss')
-        div_id.classList.add('border')
-        div_id.classList.add('border-dark')
-        div_id.classList.add('f-l')
-        div_producto.classList.add('col-md-4')
-        div_producto.classList.add('griss')            BORRAR SI ANDA LO NUEVO
-        div_producto.classList.add('border')
-        div_producto.classList.add('border-dark')
-        div_producto.classList.add('f-l')
-        div_precio.classList.add('col-md-4')
-        div_precio.classList.add('griss')
-        div_precio.classList.add('border')
-        div_precio.classList.add('border-dark')
-        div_precio.classList.add('f-l')*/
+
         //Cuando el nombre del producto es mayor a 32 letras entra y ajusta el diseño
         if($('#nombreModal').text().length > 32){
             agmas.classList.add('sum-res-pad')
@@ -307,7 +281,20 @@ $(document).ready(function(){
         titulo_cantidad.innerText = 'Cantidad en carrito'
         titulo_nombre.innerText = 'Producto'
         titulo_precio.innerText = 'Precio'
-
+        for (var i = 0; i < cont; i++) {
+            if($('#idProducto'+i).text() == $('#nombreModal').text()){
+                //////////// FUNCION FOCUS PARA ENFOCAR CARRO ///////////////      
+                var target = jQuery("#display");
+                if (target.length) {
+                    $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1200, function(){ 
+                        $("#display").focus();
+                    });
+                }
+                return clickMas(i)
+            }
+        }
         div_producto.innerText = $('#nombreModal').text()
         p_pre.innerText = $('#precioModal').text()
         input_pre.setAttribute("value", $('#precioModal').text());
