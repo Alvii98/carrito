@@ -55,8 +55,9 @@ if(isset($_SESSION['tiempo'])){
         <div class="container-fluid color-canamo">
             <a href="https://api.whatsapp.com/send?phone=5492345447270" target="_blank" class="float-right"><i class="text-light ml-3 bi bi-whatsapp"> 2345-447270</i></a>
             <a href="#" target="_blank" class="float-right"><i class="text-light ml-4 bi bi-instagram"> cornerShop</i></a>
+            <!-- CUANDO INICIA SESION COMO ADMIN LE APARECE EL USER Y UN ICONO -->
             <?php if(!empty($_SESSION['usuario']) && !empty($_SESSION['clave'])){ ?>
-            <a href="insertar_datos.php" target="_blank" style="font-size:20px;" class="text-light text-center px-5 float-right"><img src="img/logito.jpg"><br><?php echo $_SESSION['usuario'];?></a>
+            <a href="insertar_datos.php" target="_blank" style="font-size:20px;color:black;" class="text-center px-5 float-right"><img src="img/logito.png" width="50px" height="50px"><br><?php echo $_SESSION['usuario'];?></a>
             <input type="hidden" id="var_sesion" value="<?php echo $_SESSION['usuario']; ?>">
             <?php }else{ ?>
             <input type="hidden" id="var_sesion" value="">
